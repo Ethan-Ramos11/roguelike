@@ -12,6 +12,9 @@ class SpellBook:
         self.spells = ["Fireball"]
         self.effect = "spellbook"
 
+    def contains_spell(self, spell_name):
+        return spell_name in self.spells
+
 
 class Fireball:
     def __init__(self):
