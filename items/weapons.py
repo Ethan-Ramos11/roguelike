@@ -1,0 +1,21 @@
+class BasicWand:
+    def __init__(self):
+        self.name = "Basic Wand"
+        self.damage = 3
+        self.effect = "weapon"
+        self.mana_cost = 0
+
+
+class SpellBook:
+    def __init__(self):
+        self.name = "Basic Spell Book"
+        self.spells = ["Fireball"]
+        self.effect = "spellbook"
+
+
+class Fireball:
+    def __init__(self):
+        self.name = "Fireball"
+        self.damage = 8
+        self.mana_cost = 5
+        self.effect = "damage_spell"

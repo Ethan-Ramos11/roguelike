@@ -9,7 +9,17 @@ class Mage(BaseCharacter):
 
     def __init__(self, name=""):
         """Initialize mage with starting stats and spell list"""
-        pass
+        super().__init__(name)
+        self.curr_health = 40
+        self.max_health = 40
+        self.curr_mana = 20
+        self.max_mana = 20
+
+        self.strength = 4
+        self.defense = 8
+        self.agility = 12
+        self.inventory = {
+        }
 
     def level_up(self):
         """Override base level_up to provide mage-specific stat growth"""
