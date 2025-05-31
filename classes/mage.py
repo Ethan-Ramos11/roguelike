@@ -44,8 +44,8 @@ class Mage(BaseCharacter):
 
     def cast_spell(self, spell_name):
         """Cast a spell from the mage's available spell list"""
-        
-
+        if self.spellbook.contains_spell(spell_name):
+            
     def meditate(self):
         """Restore mana or gain temporary stat bonuses"""
         pass

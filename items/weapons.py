@@ -16,9 +16,3 @@ class SpellBook:
         return spell_name in self.spells
 
 
-class Fireball:
-    def __init__(self):
-        self.name = "Fireball"
-        self.damage = 8
-        self.mana_cost = 5
-        self.effect = "damage_spell"
